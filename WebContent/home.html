@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<title>Eco Office</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css\general.css">
+<link rel="stylesheet" href="css\font.css">
+<link rel="stylesheet" href="css\style.css">
+<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+<script type="text/javascript" src="func.js" ></script>
+  
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Avantgarde", TeX Gyre Adventor, URW Gothic L, sans-serif}
+
+</style>
+<body style="background-color:#d6d6c2">
+
+<div>
+
+<!-- Navigation Bar -->
+        <div style="top: 60px;left: 50%;transform: translate(-50%);z-index: 1;position: absolute;background:rgba(0,44,23,0.4);width:600px;height: 150px;border-radius: 30px;"></div>
+        
+        <div class="menu">
+<!--        <a href="home.html"><i class="fa fa-cubes w3-margin-right"></i>Eco Office</a>-->
+            <a href="gioithieu.html" >Giới Thiệu</a>
+            <a href="sanpham.html" >Sản Phẩm</a>
+            <a href="design.html" >Thiết Kế Văn Phòng</a>
+            <a href="lienhe.html" >Liên Hệ</a>
+        </div>
+
+        <div style="top: 120px;left: 50%;transform: translate(-50%);z-index:2;position: absolute;">
+            <img src="photo/logo.png">
+        </div>
+        
+<!-- Header -->
+<header class="w3-display-container w3-content" style="z-index:0; max-width:1500px">
+      
+  <div class="w3-display-container mySlides">
+  	<img src="photo/vanphong15.jpg" style="width:100vw;height:100vh">
+  	<div class="w3-display-bottomleft w3-xxlarge w3-container w3-padding-16 w3-transparent">
+    	Thiết kế phòng họp
+  	</div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+  	<img src="photo/vanphong16.jpg" style="width:100vw;height:100vh">
+  	<div class="w3-display-bottomleft w3-xxlarge w3-container w3-padding-16 w3-transparent">
+    	Sản phẩm mới
+  	</div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+  	<img src="photo/vanphong17.jpg" style="width:100vw;height:100vh">
+  	<div class="w3-display-bottomleft w3-xxlarge w3-container w3-padding-16 w3-transparent">
+    	Sản phẩm hấp dẫn
+  	</div>
+  </div>    
+  
+  <script>carousel();</script>
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <span class="w3-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+
+</header>
+
+</div>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1532px;">
+
+<!--<div class="w3-container w3-margin-top" id="rooms">
+    <h3>Giới Thiệu</h3>
+    <p>Phủ xanh văn phòng là mục tiêu của công ty Eco Ofice</p>
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="photo/binh.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding">Binh</span>
+      </div>
+    </div>
+  </div>
+-->    
+  
+  <div class="w3-container" id ="products">
+    <h3 ><ins><a href="sanpham.html">Sản Phẩm</a></ins></h3>
+    <h6>Đồ nội thất văn phòng, dụng cụ văn phòng bằng lục bình</h6>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m3">
+      <label> Loại sản phẩm</label>
+      <input class="w3-input w3-border" type="text" placeholder="">
+    </div>
+    <div class="w3-col m3">
+      <label> Tên sản phẩm</label>
+      <input class="w3-input w3-border" type="text" placeholder="">
+    </div>
+    <div class="w3-col m2">
+      <label> Giá thấp nhất</label>
+      <input class="w3-input w3-border" type="text" placeholder="">
+    </div>
+    <div class="w3-col m2">
+      <label> Giá cao nhất</label>
+      <input class="w3-input w3-border" type="text" placeholder="">
+    </div>
+    <div class="w3-col m2">
+      <label> Tìm kiếm </label>
+      <button class="w3-button w3-block w3-black">Tìm kiếm</button>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="photo/ban1.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding w3-black">Đồ văn phòng</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="photo/boc3.jpg" alt="New York" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding w3-black">Bọc sách</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="photo/ban1.jpg" alt="San Francisco" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding w3-black">File</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="photo/gia1.jpg" alt="Gia sach" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding w3-black">Giá sách</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="photo/ban1.jpg" alt="Paris" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding w3-black">Bàn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding" id="design">
+    <div class="w3-col l4 m7">
+      <h3><ins><a href="design.html">Thiết Kế Văn Phòng</a></ins></h3>
+    </div>
+    <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="photo/vanphong1.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Bàn làm việc</h3>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Tìm hiểu thêm</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="photo/vanphong1.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Không gian làm việc</h3>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Tìm hiểu thêm</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="photo/vanphong1.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Không gian thư giãn</h3>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Tìm hiểu thêm</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container" id="contact">
+    <h3><ins><a href="lienhe.html">Liên Hệ</a></ins></h3>
+    <p>Nếu quý khách có bất cứ câu hỏi hay góp ý gì, hãy liên hệ với chúng tôi theo địa chỉ bên dưới.</p>
+    
+    <div class="w3-col w3-center " >
+      <div id="googleMap" style="width:100%;height:400px;" class="w3-grayscale"></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9tltJeC7um_bQYNN3dKUG51zfvK9KQF0&callback=myMap"></script>
+    </div>
+    
+    <div class="w3-row w3-large w3-center" style="margin:32px 0">
+    	<div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> 423 Some adr, Chicago, US</div>
+    	<div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: +00 151515</div>
+    	<div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: mail@mail.com</div>
+    	
+  	</div>  
+
+    <form action="sendmail.php" target="_blank" method="post">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" name="Name" placeholder="Name" required name="Tên email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" name="Email" placeholder="Email" required name="Địa chỉ email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" name="Message" placeholder="Message" required name="Nội dung"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">Gửi Mail</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  <h5>Theo dõi chúng tôi tại</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-f w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

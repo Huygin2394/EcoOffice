@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<title>Thiết Kế</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css\general.css">
+<link rel="stylesheet" href="css\font.css">
+<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+<script type="text/javascript" src="func.js" ></script>
+  
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Avantgarde", TeX Gyre Adventor, URW Gothic L, sans-serif}
+.mySlides {
+	display:none
+}
+
+/* Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    margin-left:22%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("photo/house-design1.jpg");
+    min-height: 500px;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("photo/office-design2.jpg");
+    min-height: 500px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("photo/table-design1.jpg");
+    min-height: 500px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+
+<body style="background-color:#d6d6c2">
+
+<div class="w3-content" style="max-width:1532px;">
+
+	<div class="w3-bar w3-white w3-large" style=" z-index:1">
+  		<a href="home.html" class="w3-bar-item w3-button w3-black w3-mobile"><i class="fa fa-cubes w3-margin-right"></i>Eco Office</a>
+  		<a href="gioithieu.html" class="w3-bar-item w3-button w3-mobile">Giới Thiệu</a>
+  		<a href="sanpham.html" class="w3-bar-item w3-button w3-mobile">Sản Phẩm</a>
+  		<a href="design.html" class="w3-bar-item w3-button w3-mobile">Thiết Kế Văn Phòng</a>
+  		<a href="lienhe.html" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Liên Hệ</a>
+	</div>
+
+	<!-- Sidebar/menu -->
+	<div class="nav-design">
+	<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:-1;width:300px;font-weight:bold;" id="mySidebar"><br>
+  		<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  		<div class="w3-container">
+    		<h3 style="padding-top:64px"><i class="fa fa-cubes w3-margin-right"></i>EcoOffice</h3>
+    		<p style="padding-bottom:64px;font-size: 60%;">Mang thiên nhiên vào không gian làm việc của bạn</p>
+  		</div>
+  		<div class="w3-bar-block">
+    		<a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bàn làm việc</a> 
+    		<a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Không gian làm việc</a> 
+    		<a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Không gian thư giãn</a> 
+    		<a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Phòng họp</a> 
+    		<a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ý kiến chuyên gia</a> 
+ 		 </div>
+	</nav>
+	</div>
+	
+	<div class="design-photo">
+	
+		<!-- First Parallax Image with Logo Text -->
+		<div class="bgimg-1 w3-display-container w3-opacity-min" id="home" style="z-index:-2">
+		</div>
+
+		<!-- Container (About Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="about" style="margin-left:24%">
+  			<h3 class="w3-center">Bàn làm việc</h3>
+  			<p class="w3-center"><em>I love photography</em></p>
+  			<p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    		qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		
+		<!-- Second Parallax Image with Logo Text -->
+		<div class="bgimg-2 w3-display-container w3-opacity-min" id="home" style="z-index:-2">
+		</div>
+
+		<!-- Container (About Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="about" style="margin-left:24%">
+  			<h3 class="w3-center">Không gian làm việc</h3>
+  			<p class="w3-center"><em>I love photography</em></p>
+  			<p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    		qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		
+		<!-- Third Parallax Image with Logo Text -->
+		<div class="bgimg-3 w3-display-container w3-opacity-min" id="home" style="z-index:-2">
+		</div>
+
+		<!-- Container (About Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="about" style="margin-left:24%">
+  			<h3 class="w3-center">Không gian thư giãn</h3>
+  			<p class="w3-center"><em>I love photography</em></p>
+  			<p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    		qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+	
+		
+	<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  		<h5>Theo dõi chúng tôi tại</h5>
+  		<div class="w3-xlarge w3-padding-16">
+    		<i class="fa fa-facebook-f"></i>
+    		<i class="fa fa-instagram w3-hover-opacity"></i>
+    		<i class="fa fa-twitter w3-hover-opacity"></i>
+  		</div>
+	</footer>
+</div>
+
+</body>
+
+</html>
